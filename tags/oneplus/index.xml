@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>oneplus on Astro</title><link>https://ropapermaker.github.io/astro/tags/oneplus/</link><description>Recent content in oneplus on Astro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ropapermaker.github.io/astro/tags/oneplus/index.xml" rel="self" type="application/rss+xml"/><item><title>Star Trails 2023</title><link>https://ropapermaker.github.io/astro/p/star-trails-2023/</link><pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate><guid>https://ropapermaker.github.io/astro/p/star-trails-2023/</guid><description>&lt;img src="https://ropapermaker.github.io/astro/p/star-trails-2023/astro_trails_voskopoje.jpg" alt="Featured image of post Star Trails 2023" />&lt;h2 id="polaris-star-trails-in-voskopoje">Polaris Star Trails in Voskopoje&lt;/h2>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje.jpg"
+width="3072"
+height="4080"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_hue919ee250fb20314ce6a0f53288af37e_8249267_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_hue919ee250fb20314ce6a0f53288af37e_8249267_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Star Trails"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo taken in Voskopojë, Albania.&lt;/p>
+&lt;p>Taken on the Pixel 7&lt;/p>
+&lt;ul>
+&lt;li>1 hour total of photos&lt;/li>
+&lt;li>Google Camera camera app with the night mode setting&lt;/li>
+&lt;li>6s exposure, 8s between each picture using the Intervalometer app&lt;/li>
+&lt;li>Stitched together using StarStaX&lt;/li>
+&lt;/ul>
+&lt;p>Post-edited in Lightroom with different settings.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="timelapse">Timelapse&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;video
+controls
+src="astro_trails_voskopoje.mp4"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="astro_trails_voskopoje.mp4">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;h2 id="polaris-star-trails-in-munich">Polaris Star Trails in Munich&lt;/h2>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_munich.jpg"
+width="3072"
+height="4080"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_munich_hu6acd055b4a157e1263bc27370c95b65c_1871172_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_munich_hu6acd055b4a157e1263bc27370c95b65c_1871172_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Star Trails"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo taken in Munich.&lt;/p>
+&lt;p>Taken on the Pixel 7&lt;/p>
+&lt;ul>
+&lt;li>1 hour total of photos&lt;/li>
+&lt;li>Google Camera camera app with the night mode setting&lt;/li>
+&lt;li>6s exposure, 8s between each picture using the Intervalometer app&lt;/li>
+&lt;li>Stitched together using StarStaX&lt;/li>
+&lt;/ul>
+&lt;p>Post-edited in Lightroom with different settings.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="timelapse-1">Timelapse&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;video
+controls
+src="astro_trails_munich.mp4"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="astro_trails_munich.mp4">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;h2 id="stitching-in-ffmpeg">Stitching in ffmpeg&lt;/h2>
+&lt;p>Photos from StarStaX combined together using ffmpeg&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ffmpeg -framerate &lt;span class="m">29&lt;/span> -pattern_type glob -i &lt;span class="s1">&amp;#39;Star*.jpg&amp;#39;&lt;/span> -vf &lt;span class="nv">scale&lt;/span>&lt;span class="o">=&lt;/span>iw/2:ih/2,format&lt;span class="o">=&lt;/span>yuv420p -crf &lt;span class="m">18&lt;/span> -c:v libx264 outx264.mp4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="star-trails-from-video">Star Trails From Video&lt;/h2>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try1.jpg"
+width="2880"
+height="3840"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try1_hu25edcf141266cd1c0c29634c947a915e_4607374_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try1_hu25edcf141266cd1c0c29634c947a915e_4607374_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="(1)"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+> &lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try2.jpg"
+width="2880"
+height="3840"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try2_hub22177483edde2cad6f4f8a96f842d65_4235653_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try2_hub22177483edde2cad6f4f8a96f842d65_4235653_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="(2)"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+> &lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try3.jpeg"
+width="1440"
+height="1920"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try3_hu3dc7e6a1eb464b3e90cfe17f17c553d6_1407753_480x0_resize_q75_box.jpeg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_try3_hu3dc7e6a1eb464b3e90cfe17f17c553d6_1407753_1024x0_resize_q75_box.jpeg 1024w"
+loading="lazy"
+alt="(3)"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_op6.jpeg"
+width="4608"
+height="3456"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_op6_hu0a92db5e543da95b193dd15a8c06917e_3966538_480x0_resize_q75_box.jpeg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_op6_hu0a92db5e543da95b193dd15a8c06917e_3966538_1024x0_resize_q75_box.jpeg 1024w"
+loading="lazy"
+alt="Captured on the Oneplus 6"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+> &lt;img src="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_p6_from_video.jpg"
+width="3072"
+height="4080"
+srcset="https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_p6_from_video_hu8cc7b95ebd80dbcdc70917521634077a_6013802_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/star-trails-2023/astro_trails_voskopoje_p6_from_video_hu8cc7b95ebd80dbcdc70917521634077a_6013802_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Captured on the Pixel 6"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>These are some of my first tries using images extracted from the short videos that the Astrophotography feature produces.&lt;/p>
+&lt;p>&amp;hellip; and other methods&lt;/p>
+&lt;/blockquote></description></item><item><title>The Milky Way Galaxy 2021</title><link>https://ropapermaker.github.io/astro/p/the-milky-way-galaxy-2021/</link><pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate><guid>https://ropapermaker.github.io/astro/p/the-milky-way-galaxy-2021/</guid><description>&lt;img src="https://ropapermaker.github.io/astro/p/the-milky-way-galaxy-2021/milkyway_main.jpeg" alt="Featured image of post The Milky Way Galaxy 2021" />&lt;h2 id="landscape-view-of-the-milky-way">Landscape view of the Milky Way&lt;/h2>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_main.jpeg"
+width="4656"
+height="3496"
+srcset="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_main_hu9f823f33b699ad6f26ddc2d77d4b72d3_3523097_480x0_resize_q75_box.jpeg 480w, https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_main_hu9f823f33b699ad6f26ddc2d77d4b72d3_3523097_1024x0_resize_q75_box.jpeg 1024w"
+loading="lazy"
+alt="Milky Way Landscape"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="319px"
+>&lt;/p>
+&lt;h2 id="portrait-view-of-the-milky-way">Portrait view of the Milky Way&lt;/h2>
+&lt;p>&lt;img src="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_1.jpg"
+width="3000"
+height="4000"
+srcset="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_1_huc9caf3877175356ac8339114f0be0276_2288371_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_1_huc9caf3877175356ac8339114f0be0276_2288371_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Milky Way Clear"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+> &lt;img src="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_2.jpg"
+width="3480"
+height="4640"
+srcset="https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_2_hu88cf002fb16dd39ba2091255b8b37cd7_6085088_480x0_resize_q75_box.jpg 480w, https://ropapermaker.github.io/astro/astro/p/the-milky-way-galaxy-2021/milkyway_portrait_2_hu88cf002fb16dd39ba2091255b8b37cd7_6085088_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Milky Way Hazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Photos are taken in Voskopojë, Albania.&lt;/p>
+&lt;p>Taken on the Oneplus 6 using Ported Google Camera in Astrophotography mode.&lt;/p>
+&lt;p>4 minutes of exposure, post-edited in Snapseed with different settings.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
